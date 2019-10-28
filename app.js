@@ -11,7 +11,7 @@ app.set('port', process.env.PORT || 7878);
 var cmd=require('node-cmd');
 
 app.post('/gitPush', function (req, res) {
-console.log("Received the message inside gitPush->"+ JSON.stringify(req.body));
+console.log("Received thee message inside gitPush->"+ JSON.stringify(req.body));
 
     cmd.get('bash script.sh',
         function(err, data, stderr){
